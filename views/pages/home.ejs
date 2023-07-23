@@ -4,17 +4,15 @@
     <%- include('../partials/head', {title: title}); %>
 </head>
 <body>
-    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus expedita corporis aut libero mollitia, quam ipsam placeat at tempora quod atque ex corrupti delectus laboriosam accusantium explicabo saepe laborum vero.</h1>
-    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus expedita corporis aut libero mollitia, quam ipsam placeat at tempora quod atque ex corrupti delectus laboriosam accusantium explicabo saepe laborum vero.</h1>
-    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus expedita corporis aut libero mollitia, quam ipsam placeat at tempora quod atque ex corrupti delectus laboriosam accusantium explicabo saepe laborum vero.</h1>
-    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus expedita corporis aut libero mollitia, quam ipsam placeat at tempora quod atque ex corrupti delectus laboriosam accusantium explicabo saepe laborum vero.</h1>
-    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus expedita corporis aut libero mollitia, quam ipsam placeat at tempora quod atque ex corrupti delectus laboriosam accusantium explicabo saepe laborum vero.</h1>
-    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus expedita corporis aut libero mollitia, quam ipsam placeat at tempora quod atque ex corrupti delectus laboriosam accusantium explicabo saepe laborum vero.</h1>
-    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus expedita corporis aut libero mollitia, quam ipsam placeat at tempora quod atque ex corrupti delectus laboriosam accusantium explicabo saepe laborum vero.</h1>
-    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus expedita corporis aut libero mollitia, quam ipsam placeat at tempora quod atque ex corrupti delectus laboriosam accusantium explicabo saepe laborum vero.</h1>
-
-    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus expedita corporis aut libero mollitia, quam ipsam placeat at tempora quod atque ex corrupti delectus laboriosam accusantium explicabo saepe laborum vero.</h1>
-
-    <%- include('../partials/cookie-agreement'); %>
+    <form action="/cookies/dark-mode" method="POST">
+        <button name="dark" value="dark">Dark</button>
+    </form>
+    <!-- START Cookie banner call partial -->
+    <% if (consentStatus) {%>
+        <h1>done</h1>
+    <% } else { %>
+        <%- include('../partials/cookie-agreement'); %>
+    <% } %>
+    <!-- END Cookie banner call partial -->
 </body>
 </html>
