@@ -16,7 +16,7 @@ router.route("/:cookieName")
         if (request.body.consent == 'consent') {
             response.cookie('cookie-consent', true)
         }
-        if (request.body.dark == 'dark' && request.cookies['cookie-consent'] == 'true'){
+        if (request.body.dark == 'dark'){
             if (request.cookies['dark-mode'] == 'false') {
                 response.cookie('dark-mode', true)
             } else {
