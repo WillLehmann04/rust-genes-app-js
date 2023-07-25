@@ -4,15 +4,6 @@
     <%- include('../partials/head', {title: title}); %>
 </head>
 <body>
-    <form action="/cookies/dark-mode" method="POST">
-        <button name="dark" value="dark">Dark</button>
-    </form>
-    <!-- START Cookie banner call partial -->
-    <% if (consentStatus) {%>
-        <h1>done</h1>
-    <% } else { %>
-        <%- include('../partials/cookie-agreement'); %>
-    <% } %>
-    <!-- END Cookie banner call partial -->
+    <button id="dark">Dark</button>
 </body>
 </html>
