@@ -7,6 +7,15 @@ body {
     color: black;
 }
 
-.cookie-consent-form {
+body.dark {
+    background-color: var(--dark-background-color);
+    color: var(--dark-text-color-);
+}
+.nav {
     background-color: white;
+    color: black;
+}
+.nav.dark {
+    background-color: grey;
+    color: white;
 }
