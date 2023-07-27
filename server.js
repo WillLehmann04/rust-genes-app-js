@@ -6,6 +6,7 @@ app.set('view engine', 'ejs')
 app.use('/favicon.ico', express.static('images/border.png'));
 
 app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/images'));
 
 app.get('/', (request, response) => {
     response.render("pages/home", {title: "Rust Genetics - Calculator"})

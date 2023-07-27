@@ -1,21 +1,31 @@
+:root {
+    /* DARK MODE */ 
+    --dark-background-color: rgb(19, 20, 24);
+    --dark-text-color: rgb(255, 255, 255);
+    --dark-accent-text-color: rgb(78, 78, 85);
+
+    /* LIGHT MODE */
+    --light-background-color: rgb(236, 242, 251);
+    --light-text-color: rgb(0, 0, 0);
+    --light-accent-text-color: rgb(123, 124, 129);
+
+    /* GENERAL ITEMS */
+    --box-gradient-blue: linear-gradient(rgb(38, 0, 164), rgb(52, 53, 241));
+    --box-gradient-orange: linear-gradient(rgb(243, 207, 147), rgb(218, 104, 53));
+
+    --green: rgb(122, 182, 113);
+    --blue: rgb(98, 79, 206);
+    --yellow: rgb(251, 202, 108);
+    --pink: rgb(253, 151, 188);
+}
 body {
-    --dark-background-color: black;
-    --dark-text-color-: white;
-
-
-    background-color: white;
-    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: var(--light-background-color);
+    color: var(--light-text-color);
 }
 
 body.dark {
+    font-family: 'Courier New', Courier, monospace;
     background-color: var(--dark-background-color);
-    color: var(--dark-text-color-);
-}
-.nav {
-    background-color: white;
-    color: black;
-}
-.nav.dark {
-    background-color: grey;
-    color: white;
+    color: var(--dark-text-color);
 }
