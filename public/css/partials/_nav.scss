@@ -1,0 +1,32 @@
+/* Navbar css Information */
+$dark-mode-color: white;
+$dark-background-color: black;
+
+$light-mode-color: black;
+$light-background-color: white;
+
+nav {
+    .nav-item{
+        // LIGHT-MODE Information //
+        margin-left:10px;
+        margin-right:10px;
+        text-decoration: none;
+
+        // <a> Information //
+        a {
+            color:black;
+            &.dark{
+                color:white;
+            }
+        }
+    }
+    // DARK MODE //
+    &.dark{
+        background-color: $dark-background-color;
+        color: $dark-mode-color;
+        box-shadow: 10px 10px 8px #ffffff0f;
+    }
+    background-color: $light-background-color;
+    color: $light-mode-color;
+    box-shadow: 0px 10px 10px #0000000f;
+}

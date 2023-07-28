@@ -1,0 +1,11 @@
+$dark-mode-color: white;
+$dark-background-color: black;
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    &.dark {
+        background-color: $dark-background-color;
+        color: $dark-mode-color;
+    }
+}

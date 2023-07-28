@@ -4,15 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "devStart": "concurrently \"npx sass --watch ./public/css/input.scss ./public/css/style.css\" \"nodemon server.js\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^8.2.0",
     "cookie-parser": "^1.4.6",
     "ejs": "^3.1.9",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "sass": "^1.64.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
